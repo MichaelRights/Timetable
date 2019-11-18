@@ -1,0 +1,41 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads = "http://schemas.android.com/apk/res-auto"
+
+    android:orientation= "vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum = "100">
+
+    <Button
+        android:text="Փոխել բաժինը"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1" />
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight = "80"
+        android:id="@+id/EListView" />
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight = "10"
+        android:id="@+id/datePicker1"
+        android:layout_marginRight="0.0dp" />
+
+    
+    <com.google.android.gms.ads.AdView
+        android:id ="@+id/adViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight = "10"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId = "ca-app-pub-5131184764831509/1934408320"
+        ads:adSize = "SMART_BANNER"
+        android:layout_gravity = "bottom"/>
+</LinearLayout>

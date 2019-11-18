@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:ads ="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Ընտրեք Ձեր բաժինը"
+        android:textAlignment = "center"
+        android:paddingVertical = "8dp"
+        android:textColor = "@android:color/black"
+        android:textSize ="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="70.0dp"
+        android:id="@+id/textView1" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal = "16dp"
+        android:id="@+id/radioGroup1">
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ԻԿՄ 1"
+            android:id="@+id/radioButton1" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ԻԿՄ 2"
+            android:id="@+id/radioButton2" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ԻԿՄ 3"
+            android:id="@+id/radioButton3" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ԻԿՄ 4"
+            android:id="@+id/radioButton4" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ՔԳԿ 3"
+            android:id="@+id/radioButton5" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ՔԳԿ 4"
+            android:id="@+id/radioButton6" />
+    </RadioGroup>
+
+    <Button
+        android:text="OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/OkButton" />
+
+    <com.google.android.gms.ads.AdView
+        android:id ="@+id/adViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId = "ca-app-pub-5131184764831509/1934408320"
+        ads:adSize = "SMART_BANNER"
+        android:layout_gravity = "bottom"/>
+
+</LinearLayout>
